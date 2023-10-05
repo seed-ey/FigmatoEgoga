@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
+
+::-webkit-scrollbar {
+
+    width: 0px !important;
+  
+    background-color: white !important;
+  
+  }
+  
+  
+  
+  
+  ::-webkit-scrollbar-thumb {
+  
+    width: 0px !important;
+  
+    background-color: whitesmoke !important;
+  
+    border-radius: 0px !important;
+  
+  }
+  
+  
+  
+  
+  ::-webkit-scrollbar:horizontal {
+  
+    width: 0px !important;
+  
+    background-color: white !important;
+  
+  }
+  
+  
+  
+  
+  ::-webkit-scrollbar-thumb:horizontal {
+  
+    width: 0px !important;
+  
+    background-color: whitesmoke !important;
+  
+    border-radius: 0px;
+  
+  }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

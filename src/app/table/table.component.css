@@ -1,0 +1,123 @@
+/* .container {
+    position: relative;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card {
+  width: 1100px;
+  margin-top: 40px;
+  margin-left: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.card-body {
+  white-space: nowrap;
+}
+/* span {
+    position: absolute;
+    top: -50px;
+} */
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 3%;
+}
+span img {
+  height: 19px;
+  width: 19px;
+}
+p {
+  padding: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.search-wrapper {
+  background-color: rgb(255, 255, 255);
+}
+
+.search-wrapper input {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+.search-wrapper span {
+  /* margin-top: 153px; */
+  width: 13px;
+  height: 13px;
+}
+.btn {
+  background: #2d0c52;
+  color: white;
+  width: 168px;
+  height: 37px;
+  border-radius: 20px;
+}
+
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.wrapper li:hover {
+  background-color: #f0f0f0;
+}
+
+
+table {
+    font-family: "Nunito Sans", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background: #F1F6F9;
+    margin-bottom: 10px;
+
+}
+
+td {
+    font-family: "Lato", sans-serif;
+    text-align: left; 
+    vertical-align: middle; 
+    height: 1px; 
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .page {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.page p {
+    flex: 1;
+}
+
+
+.pagination {
+    margin-right: 80px;
+}
+
+  .page-item {
+    display: inline-block; 
+    margin-right: 10px; 
+  }
+  
+  .page-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+  }

@@ -1,0 +1,136 @@
+.bond {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-left: 15px;
+}
+.bond button {
+  border-radius: 50px;
+  width: 140px;
+  height: 28px;
+  padding: 0;
+}
+
+.bond h6 {
+  color: rgba(85, 44, 181, 1);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bond h6 span {
+  color: black;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+header .add {
+  font-size: small;
+  color: rgba(135, 29, 251, 1);
+  font-weight: 500;
+}
+header .add p {
+  margin-left: 23px;
+  margin-top: -10px;
+}
+
+.sidebar2 {
+  width: 222px;
+  height: 760px;
+  background-color: #e6def8;
+  padding-top: 50px;
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  /* height: 100%; */
+
+ 
+  
+}
+
+.inner-side {
+  background-color: #fff;
+}
+.inner-side2 {
+  margin-left: 5px;
+  padding: 20px 0 1px 0;
+}
+
+.sidebar2 button {
+  width: 222px;
+  height: 43px;
+  border: none;
+  margin-top: 2px;
+  background-color: #ddcbf8;
+}
+
+.inner-side2 li {
+  list-style: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 14px;
+
+
+}
+
+.inner-side2 li p {
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+
+.inner-side2 li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.inner-side2 li img {
+  width: 19px;
+  height: 14.19px;
+  margin-right: 10px;
+}
+
+.active-item {
+  color: #fca542;
+}
+
+.detail img {
+  width: 7px;
+  height: 6px;
+  margin-left: 60px;
+}
+
+.main {
+  display: grid;
+  /* grid-template-columns: 222px 1fr; */
+  background: #F1F2FD;
+}
+.bodyContent {
+    margin-left: 230px;
+    background: #ffffff;
+
+      /* border: 2px solid red; */
+}
+.bodyContent button {
+  font-size: 14px;
+  font-weight: 600;
+  background: #25b273; 
+  color: white; 
+  border: none;
+  font-family: 'Lato', sans-serif;
+  margin-right: 20px;
+}
+.add p {
+  color: #871DFB;
+  /* margin-left: 25px; */
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.add p span {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
+}

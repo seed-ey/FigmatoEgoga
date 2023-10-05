@@ -1,0 +1,964 @@
+<div class="container p-0">
+  
+    <div class="mx-5">
+    <div class="row" *ngIf="bondShow.listItem1">
+      <h5 style="font-size: 16px; font-weight: 700; font-family: Poppins">
+        DEAL TERMS
+      </h5>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Deal Type</label
+            >
+            <input
+              [(ngModel)]="modalData.dealType"
+              class="form-control"
+              name="dealType"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Counterparty <span style="color: red">*</span></label
+            >
+            <input
+              [(ngModel)]="modalData.counterParty"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+          <div class="col-md-1">
+            <img
+              src="assets/images/Group 12750.png "
+              style="
+                width: 25px;
+                height: 25px;
+                margin-left: -9px;
+                margin-top: 43px;
+              "
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Direction<span style="color: red">*</span></label
+            >
+            <select class="form-select" aria-label="default select example">
+              <option selected></option>
+              <option value="1">BUY</option>
+              <option value="2">Sell</option>
+            </select>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Trade Date<span style="color: red">*</span></label
+            >
+            <input
+              [(ngModel)]="modalData.tradeDate"
+              type="date"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Start Date<span style="color: red">*</span></label
+            >
+            <input
+              type="date"
+              [(ngModel)]="modalData.startDate"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Quantity<span style="color: red">*</span></label
+            >
+            <input
+              [(ngModel)]="modalData.quantity"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label mx-1"
+                >Nominal Amount</label
+              >
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.amount"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Clean Price<span style="color: red">*</span></label
+            >
+            <input
+              [(ngModel)]="modalData.cleanPrice"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label mx-1"
+                >Dirty Price</label
+              >
+
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.dirtyPrice"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Current Yield</label
+            >
+            <input
+              [(ngModel)]="modalData.currentYield"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Common Reference</label
+            >
+            <input
+              [(ngModel)]="modalData.commonReference"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Trading Book <span style="color: red">*</span></label
+            >
+            <input
+              [(ngModel)]="modalData.tradingBook"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Investment Type <span style="color: red">*</span></label
+            >
+            <select class="form-select" aria-label="default select example">
+              <option selected>---Please Select------</option>
+            </select>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Process Action <span style="color: red">*</span></label
+            >
+            <input
+              [(ngModel)]="modalData.processAction"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="d-flex mt-5">
+        <p style="font-weight: 700">DEAL LIQUIDATION</p>
+        <img
+          src="assets/images/Group 12750.png"
+          style="width: 20px; height: 20px; margin-left: 9px; margin-top: 7px"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="row" *ngIf="bondShow.listItem2">
+      <h5 style="font-size: 16px; font-weight: 700; font-family: Poppins">
+        IMPLIED TERMS
+      </h5>
+      <div class="col-md-12 offset-md-0">
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Bought At Disc/Prem</label
+            >
+            <input
+              [(ngModel)]="modalData.boughtAtDiscPrem"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Discount/Premium</label
+              >
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.discountPremium"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Int Bought/Sold</label
+            >
+            <input
+              [(ngModel)]="modalData.interestBoughtSold"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Int Bought/Sold opt.</label
+            >
+            <input
+              [(ngModel)]="modalData.interestBoughtSoldAdj"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Interest Accrued</label
+              >
+
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.interestAccrued"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Interest Accrued Adj.</label
+              >
+
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.interestAccruedAdj"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Dis/Prem Amortized</label
+              >
+
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.discPremAmortized"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Dis/Prem Amortized Adj.</label
+              >
+
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.discPremUnamortized"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Daily interest Amount</label
+              >
+
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.dailyInterestAmount"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="bondShow.listItem3">
+      <h5 style="font-size: 16px; font-weight: 700; font-family: Poppins">
+        SECURITY DETAILS
+      </h5>
+      <div class="col-md-12 offset-md-0">
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Bond Issuer</label
+            >
+            <input
+              [(ngModel)]="modalData.bondIssuer"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Maturity Date</label
+            >
+            <input
+              [(ngModel)]="modalData.maturityDate"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Tenor</label
+              >
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.tenor"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Day Count Basis</label
+            >
+            <input
+              [(ngModel)]="modalData.dayCountBasis"
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Coupon Rate</label
+            >
+            <input
+              [(ngModel)]="modalData.couponRate"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Last Coupon Date</label
+            >
+            <input
+              [(ngModel)]="modalData.lastCouponDate"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Next Coupon Date</label
+            >
+            <input
+              [(ngModel)]="modalData.nextCouponDate"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Next Coupon Amount</label
+              >
+
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nextCouponAmount"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  style="background-color: #f2f7f9"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Days in Current Accrual</label
+            >
+            <input
+              [(ngModel)]="modalData.daysInCurrentAccrual"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="bondShow.listItem4">
+      <h5 style="font-size: 16px; font-weight: 700; font-family: Poppins">
+        ANCILLARY SERVICE
+      </h5>
+      <div class="col-md-12 offset-md-0">
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Deal Status</label
+            >
+            <input
+              [(ngModel)]="modalData.dealStatus"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              style="background-color: #f2f7f9"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Counterparty Reference</label
+            >
+            <input
+              [(ngModel)]="modalData.counterPartyReference"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Dealingo Method</label
+            >
+            <select class="form-select" aria-label="default select example">
+              <option selected></option>
+              <option value="1">BUY</option>
+              <option value="2">SELL</option>
+            </select>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Delivery Type</label
+            >
+            <select class="form-select" aria-label="default select example">
+              <option selected></option>
+              <option value="1">BUY</option>
+              <option value="2">SELL</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Broker</label
+            >
+            <select class="form-select" aria-label="default select example">
+              <option selected></option>
+              <option value="1">BUY</option>
+              <option value="2">SELL</option>
+            </select>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <div class="row">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Broker Commission</label
+              >
+
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nominal"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  [(ngModel)]="modalData.nextCouponAmount"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Broker Reference</label
+            >
+            <input
+              [(ngModel)]="modalData.brokerReference"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+            />
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Portfolio</label
+            >
+            <input
+              [(ngModel)]="modalData.portfolio"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Deal Note</label
+            >
+            <textarea
+              [(ngModel)]="modalData.nextCouponDate"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="col-md-5 offset-md-1">
+          
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Confirmation Required</label
+              >
+              <select class="form-select" aria-label="default select example">
+                <option selected></option>
+                <option value="1">phone</option>
+                <option value="2">email</option>
+              </select>
+              </div>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+
+    <div class="button-container d-flex justify-content-between">
+      <div (ngSubmit)="buttonFunc()">
+        <button
+          style="background-color: #2d0c52; color: white"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          (click)="openModal(modalTemplate)"
+        >
+          Save
+        </button>
+      </div>
+      <div>
+        <button
+          class="button-special"
+          style="background-color: #f2994a; color: white"
+        >
+          pend
+        </button>
+        <button style="background-color: #bdbdbd; color: white">cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #modalTemplate>
+  <div class="wrapper">
+    <div>Bond-FWD2021/0004(Summary)</div>
+    <button
+      class="button"
+      [class.active]="activeButton === 'button1'"
+      (click)="setDataForButton('button1')"
+    >
+      Deal Terms
+    </button>
+    <button
+      class="button"
+      [class.active]="activeButton === 'button2'"
+      (click)="setDataForButton('button2')"
+    >
+      Implied Terms
+    </button>
+    <button
+      class="button"
+      [class.active]="activeButton === 'button3'"
+      (click)="setDataForButton('button3')"
+    >
+      Security Details
+    </button>
+    <button
+      class="button"
+      [class.active]="activeButton === 'button4'"
+      (click)="setDataForButton('button4')"
+    >
+      Auxilliary Service
+    </button>
+    <form>
+    <div class="modal-body ">
+      <div class="m-4" *ngIf="dealTerms">
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Deal Type</label>
+            <p>{{ modalData.dealType }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Common Reference</label>
+            <p>{{ modalData.commonReference }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Counterparty</label>
+            <p>{{ modalData.counterParty }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Direction</label>
+            <p>{{ modalData.direction }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Trade Date</label>
+            <p>{{ modalData.tradeDate }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Start Date</label>
+            <p>{{ modalData.startDate }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Quantity</label>
+            <p>{{ modalData.quantity }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Norminal Amount</label>
+            <span class="d-flex align-items-center">
+              <p>{{ modalData.nominal }}</p>
+              <p>{{ modalData.amount }}</p>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Clean Price(%)</label>
+            <p>{{ modalData.cleanPrice }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Dirty Price(%)</label>
+            <span class="d-flex align-items-center">
+              <p>{{ modalData.dirtyPrice }}</p>
+              <p>{{ modalData.price }}</p>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Consideration</label>
+            <p>{{ modalData.consideration }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Trading Book</label>
+            <p>{{ modalData.tradingBook }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Investment Type</label>
+            <p>{{ modalData.investmentType }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Process Action</label>
+            <p>{{ modalData.processAction }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="m-4" *ngIf="impliedTerms">
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Bought At Disc/Prem</label>
+            <p>{{ modalData.boughtAtDiscPrem }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Discount/ premium</label>
+            <p>{{ modalData.discountPremium }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Interest Bought/Sold</label>
+            <p>{{ modalData.interestBoughtSold }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Interest Bought/Sold opt.</label>
+            <p>{{ modalData.interestBoughtSoldAdj }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Interest Accrued</label>
+            <p>{{ modalData.interestAccrued }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Interest Accrued Adj.</label>
+            <p>{{ modalData.interestAccruedAdj }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Disc /Prem Amortized</label>
+            <p>{{ modalData.discPremAmortized }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Disc /Prem Unamortized</label>
+            <p>{{ modalData.discPremUnamortized }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Daily Interest Amount</label>
+            <p>{{ modalData.dailyInterestAmount }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Daily Amortization Amount</label>
+            <p>{{ modalData.dailyAmortizationAmount }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="m-4" *ngIf="securityDetails">
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Bond Issuer</label>
+            <p>{{ modalData.bondIssuer }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Maturity Date</label>
+            <p>{{ modalData.maturityDate }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Tenor</label>
+            <p>{{ modalData.tenor }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Day Count Basis</label>
+            <p>{{ modalData.dayCountBasis }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Coupon Rate</label>
+            <p>{{ modalData.couponRate }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Last Coupon Rate</label>
+            <p>{{ modalData.lastCouponDate }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Next Coupon Date</label>
+            <p>{{ modalData.nextCouponDate }}</p>
+          </div>
+          <div class="col">
+            <label class="savedHeader">Next Coupon Amount</label>
+            <p>{{ modalData.nextCouponAmount }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="savedHeader">Days In Current Acccrual</label>
+            <p>{{ modalData.daysInCurrentAccrual }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button
+        type="button"
+        class="btn btnSave"
+        style="
+          width: 150px;
+          background-color: #2d0c52;
+          color: white;
+          border-radius: 20px;
+        "
+        routerLink="/table"
+        (click)="buttonFunc()"
+      
+      >
+        Submit
+      </button>
+      <button
+        type="button"
+        class="btn btnCancel;"
+        style="
+          width: 150px;
+          background-color: #bdbdbd;
+          color: white;
+          border-radius: 20px;
+        "
+      >
+        Cancel
+      </button>
+    </div>
+  </form>
+  </div>
+</ng-template>

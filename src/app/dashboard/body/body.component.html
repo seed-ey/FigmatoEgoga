@@ -1,0 +1,96 @@
+<div class="main">
+  <div class="sidebar2">
+    <div class="detail">
+      <button (click)="toggleDropdown('menu')">
+        Menu
+        <img
+          *ngIf="isDropdownVisible"
+          src="assets/images/Vector (7).png"
+          alt=""
+        />
+        <img
+          *ngIf="!isDropdownVisible"
+          src="assets/images/Vector (8).png"
+          alt=""
+        />
+      </button>
+    </div>
+    <div class="detail">
+      <button (click)="toggleDropdown('section')">
+        Section
+        <img
+          *ngIf="isDropdownVisible"
+          src="assets/images/Vector (8).png"
+          alt=""
+        />
+        <img
+          *ngIf="!isDropdownVisible"
+          src="assets/images/Vector (7).png"
+          alt=""
+        />
+      </button>
+    </div>
+    <ul class="inner-side" *ngIf="isDropdownVisible">
+      <div class="inner-side2">
+        <li class="list-item"
+          (click)="displayDealResult()"
+          buttonClicked="receiveDataFromChild($event)"
+          [ngClass]="{ 'active-item': activeButton === 'button1' }"
+        >
+          <a (click)="setActiveButton('button1')">
+            <img src="assets/images/Page-1_99_.png" alt="" />
+            <p>Deal Terms</p>
+          </a>
+        </li>
+        <li 
+        (click)="displayImpliedResult()"
+        [ngClass]="{ 'active-item': activeButton === 'button2' }">
+          <a (click)="setActiveButton('button2')">
+            <img src="assets/images/Group (5).png" alt="" />
+            <p>Implied Terms</p>
+          </a>
+        </li>
+        <li 
+        (click)="displaySecurityResult()"
+        [ngClass]="{ 'active-item': activeButton === 'button3' }">
+          <a (click)="setActiveButton('button3')">
+            <img src="assets/images/Group (6).png" alt="" />
+            <p>Security Details</p>
+          </a>
+        </li>
+        <li 
+        (click)="displayAuxiliaryResult()"
+        [ngClass]="{ 'active-item': activeButton === 'button4' }">
+           <a (click)="setActiveButton('button4')">
+            <img src="assets/images/Group (7).png" alt="" />
+            <p>Ancillary Service</p>
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+  <div class="bodyContent">
+    <div class="bond d-flex">
+      <span class="d-flex">
+        <img
+          class="my-1"
+          src="assets/images/Vector (6).png"
+          alt="alternative-text"
+        />
+        <h6 class="mx-3" style="width: 400px;">
+          Bond-FWD2021/004<span>(12.7% 28 August 2023)</span>
+        </h6>
+      </span>
+
+      <button>FO Input Queue</button>
+    </div>
+    <div class="add mx-5">
+      <p>Business Unit-<span>001 Head office</span></p>
+    </div>
+    <app-deal-terms [bondShow]="bondShow" [value] ="editedUser"></app-deal-terms>
+  </div>
+</div>
+
+
+  

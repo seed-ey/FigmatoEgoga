@@ -1,0 +1,112 @@
+<div class="container">
+  <span class="d-flex m-2">
+    <img
+      src="assets/images/Vector (6).png"
+      alt="alternative-text"
+      routerLink="/body"
+    />
+    <h6 class="mx-2">Account</h6>
+  </span>
+
+  <div class="card">
+    <p>Table showing Lists of account</p>
+    <div class="d-flex justify-content-between">
+      <div class="search-wrapper mx-4">
+        <span class="bx bx-search"></span>
+        <input type="search" placeholder="Search Table..." />
+      </div>
+      <button type="button" class="btn mx-5">New Account</button>
+    </div>
+
+    <div class="card-body" style="overflow-x: auto">
+      <div class="card-body">
+        <table class="table table-striped mt-3">
+          <thead style="border-bottom: 1px solid #000">
+            <tr>
+              <th>S/N</th>
+              <th *ngFor="let header of headache">{{ header.title }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of modelData; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ user.dealType }}</td>
+              <td>{{ user.commonReference }}</td>
+              <td>{{ user.counterParty }}</td>
+              <td>{{ user.direction }}</td>
+              <td>{{ user.tradeDate }}</td>
+              <td>{{ user.startDate }}</td>
+              <td>{{ user.quantity }}</td>
+              <td>{{ user.nominal }}</td>
+              <td>{{ user.amount }}</td>
+              <td>{{ user.cleanPrice }}</td>
+              <td>{{ user.dirtyPrice }}</td>
+              <td>{{ user.currentYield }}</td>
+              <td>{{ user.price }}</td>
+              <td>{{ user.consideration }}</td>
+              <td>{{ user.tradingBook }}</td>
+              <td>{{ user.investmentType }}</td>
+              <td>{{ user.processAction }}</td>
+              <td>{{ user.boughtAtDiscPrem }}</td>
+              <td>{{ user.discountPremium }}</td>
+              <td>{{ user.interestBoughtSold }}</td>
+              <td>{{ user.interestBoughtSoldAdj }}</td>
+              <td>{{ user.interestAccrued }}</td>
+              <td>{{ user.interestAccruedAdj }}</td>
+              <td>{{ user.discPremAmortized }}</td>
+              <td>{{ user.discPremUnamortized }}</td>
+              <td>{{ user.dailyInterestAmount }}</td>
+              <td>{{ user.dailyAmortizationAmount }}</td>
+              <td>{{ user.bondIssuer }}</td>
+              <td>{{ user.maturityDate }}</td>
+              <td>{{ user.tenor }}</td>
+              <td>{{ user.dayCountBasis }}</td>
+              <td>{{ user.couponRate }}</td>
+              <td>{{ user.lastCouponDate }}</td>
+              <td>{{ user.nextCouponDate }}</td>
+              <td>{{ user.nextCouponAmount }}</td>
+              <td>{{ user.daysInCurrentAccrual }}</td>
+              <td>{{ user.dealStatus }}</td>
+              <td>{{ user.counterPartyReference }}</td>
+              <td>{{ user.DealingoMethod }}</td>
+              <td>{{ user.deliveryType }}</td>
+              <td>{{ user.broker }}</td>
+              <td>{{ user.brokerCommission }}</td>
+              <td>{{ user.brokerReference }}</td>
+              <td>{{ user.portfolio }}</td>
+              <td>{{ user.dealNote }}</td>
+              <td>{{ user.confirmationRequired }}</td>
+              <td>{{ user.dealer }}</td>
+              <!-- <td>
+                  <i class="fa-solid fa-ellipsis-vertical" mat-button [matMenuTriggerFor]="icon"></i>
+                </td> -->
+              <td>
+                <a
+                  mat-icon-button
+                  [matMenuTriggerFor]="menu"
+                  aria-label="Example icon-button with a menu"
+                >
+                  <mat-icon>more_vert</mat-icon>
+                </a>
+                <mat-menu #menu="matMenu">
+                  <a mat-menu-item>
+                    <span (click)="editUser(user)">Edit</span>
+                  </a>
+                  <a mat-menu-item>
+                    <span (click)="deleteFunc(user.id)">Delete</span>
+                  </a>
+                </mat-menu>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <app-pagination 
+        [currentPage]="currentPage" 
+        [limit]="10" 
+        [total]="500" 
+        (changePage)="changePage($event)">
+        </app-pagination>
+      </div>
+    </div>
+  </div>
+</div>

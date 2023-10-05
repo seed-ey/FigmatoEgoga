@@ -1,0 +1,132 @@
+
+.container h5{
+    /* font-weight: 700; */
+    margin-bottom: 20px;
+}
+.cont-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.bond{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-left: 15px;
+    
+}
+.bond button{
+    border-radius: 50px;
+    width: 100px;
+    height: 33px;
+}
+
+.bond h6 {
+    color: rgba(85,44,181,1);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .add {
+    font-size: small;
+    color: rgba(135,29,251,1);
+    font-weight: 500;
+    margin-top: -10px;
+}
+header .add p{
+    margin-left: 23px;
+
+}
+
+.form-select {
+    height: 38px;
+}
+.row{
+    line-height: 37px;
+    margin-bottom: 10px;
+}
+
+.button-container{
+    background-color: #F1F2FD;
+    /* margin-top: 100px; */
+    height: 52px;
+    width: 100% !important;
+    padding-top: 10px;
+    position: sticky;
+    bottom: 0;
+}
+.button-container button {
+    width: 80px;
+    Height: 33px;
+    border-radius: 14px;
+    padding: 6px 22px 6px 22px;
+    border: none;
+    line-height: 15px;
+}
+.button-special{
+    margin-right: 30px;
+}
+.wrapper{
+    width: 619px;
+    height: 921px;
+    background: #FFFFFF;
+}
+.wrapper .button {
+    border: none;
+    width: 146px;
+    height: 44px;
+    margin-left: 2px;
+    margin-top: 40px;
+    
+}
+.button.active{
+    background-color: #2d0c52;
+    color:#FFFFFF
+  }
+  .modal-title{
+    margin-top: 13px;
+    margin-left: 22px;
+  }
+  .btnDeal{
+    width: 148px;
+    height: 44px;
+    background: #EAE7EE;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #707070;
+    font-size: 14px;
+  }
+  .modal-content{
+    max-width: 619px;
+  }
+  .savedHeader{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #707070;
+    font-size: 14px;
+  }
+  .savedText{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #212529;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .form-label {
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: -3px;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url('../../assets/images/dateicon.png');
+    background-repeat: no-repeat;
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+
