@@ -23,7 +23,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
+import { Chart, registerables } from 'node_modules/chart.js';
 
+// Chart.register(...registerables);
 
 
 
@@ -57,7 +59,12 @@ import { AnalyticsComponent } from './analytics/analytics.component';
     ReactiveFormsModule
 
   ],
-  providers: [DatePipe],
+  providers: [
+    // {
+    //   provide: 'Chart',
+    //   useValue: Chart,
+    // },
+    DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
