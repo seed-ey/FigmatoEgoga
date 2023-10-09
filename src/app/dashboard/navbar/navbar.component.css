@@ -87,6 +87,7 @@ nav {
 .wrapper{
    position: sticky;
    top: 0;
+   z-index: 5;
 }
 .pipe{
    border: 1px solid #DDDEF1;

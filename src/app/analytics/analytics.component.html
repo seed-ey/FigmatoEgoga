@@ -1,36 +1,148 @@
+<div class="wrapper">
+  <h1>Charts</h1>
+  <div class="row m-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body fixed-height-card">
+              <div class="row">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">Product(Profit/Loss)</h5>
+                  <div class="select-wrapper d-flex">
+                    <div class="col-md-4 mx-1">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>FVTPL</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mx-1">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>USD</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Monthly</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-<div class="row">
-    <div class="col-lg-6">
-        <h2>Bubble Chart</h2>
-        <canvas id="bubchart"></canvas>
-    </div>
-    <div class="col-lg-6">
-        <h2>Scatter Chart</h2>
-        <canvas id="scchart"></canvas>
-    </div>
-    <div class="col-lg-6">
-        <h2>Bar Chart</h2>
-        <canvas id="barchart"></canvas>
-    </div>
-    <div class="col-lg-6">
-        <h2>Pie Chart</h2>
-        <canvas id="piechart"></canvas>
-    </div>
-    <div class="col-lg-6">
-        <h2>Doughnut Chart</h2>
-        <canvas id="dochart"></canvas>
-    </div>
-    <div class="col-lg-6">
-        <h2>polarArea Chart</h2>
-        <canvas id="pochart"></canvas>
-    </div>
+              <canvas id="barchart" ></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body fixed-height-card">
+              <div class="row">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">Transaction(Volume)</h5>
+                  <div class="select-wrapper d-flex">
+                    <div class="col-md-4 mx-3">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                        style="width: 150px;"
+                      >
+                        <option selected>Fixed income</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mx-1">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>USD</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mx-0">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Monthly</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <p>Total:$12,594,000</p> -->
 
-    <div class="col-lg-6">
-        <h2>Radar Chart</h2>
-        <canvas id="rochart"></canvas>
+              <canvas id="dochart" class="box"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-3">
+          <div class="card">
+            <div class="card-body fixed-height-card">
+              <div class="row">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">Transaction(Volume)</h5>
+                  <div class="select-wrapper d-flex">
+                    <div class="col-md-4 mx-3">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                        style="width: 150px;"
+                      >
+                        <option selected>Fixed income</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mx-1">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>USD</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mx-0">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Monthly</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <p>Total:$12,594,000</p> -->
+
+              <canvas id="dochart1" class="box"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Pie Chart</h5>
+              <canvas id="piechart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    
-
-    
+  </div>
 </div>

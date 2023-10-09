@@ -46,13 +46,5 @@ listarray = [{ "name": "ravi", "mark": "75" }]
     let head_obj=new HttpHeaders().set("Authorization","bearer "+token)
     return this.http.get("https://localhost:44308/Employee",{headers:head_obj});
   }
-
-  GetCustomer(){
-    return this.http.get("https://localhost:44308/Customer");
-  }
-
-  Getchartinfo(){
-    return this.http.get("http://localhost:3000/sales");
-  }
   
 }
