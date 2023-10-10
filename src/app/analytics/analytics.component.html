@@ -1,6 +1,6 @@
 <div class="wrapper">
   <h1>Charts</h1>
-  <div class="row m-4">
+  <div class="row m-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -41,7 +41,7 @@
                 </div>
               </div>
 
-              <canvas id="barchart" ></canvas>
+              <canvas id="barchart" class="box1" ></canvas>
             </div>
           </div>
         </div>
@@ -86,27 +86,96 @@
               <!-- <p>Total:$12,594,000</p> -->
 
               <canvas id="dochart" class="box"></canvas>
+              <div class="color-wrapper">
+                <div class="d-flex justify-content-around">
+                    <div class="color-box">
+                      <div style="height: 16px; width: 17px; background: #5E227F; border-radius: 3px;"></div>
+                      <div style="margin-left: 5px; margin-top: -2px;">Treasury Note</div>
+                    </div>
+                    <div class="color-box">
+                      <div style="height: 16px; width: 17px; background: #FCA542; border-radius: 3px;"></div>
+                      <div style="margin-left: 5px; margin-top: -2px;">FGN Bond</div>
+                    </div>
+                    <div class="color-box">
+                      <div style="height: 16px; width: 17px; background: #1C6DCA; border-radius: 3px;"></div>
+                      <div style="margin-left: 5px; margin-top: -2px;">Euro Bond</div>
+                    </div>
+                  </div>
+                <div class="d-flex justify-content-around mt-3 ">
+                    <div class="d-flex" style="margin-left: 15px;">
+                      <div style="height: 16px; width: 17px; background: #56CCF2; border-radius: 3px;"></div>
+                      <div style="margin-left: 5px; margin-top: -2px;">Corporate Bond</div>
+                    </div>
+                    <div class="d-flex" style="margin-left: 45px;">
+                      <div style="height: 16px; width: 17px; background: #2D0C52; border-radius: 3px;"></div>
+                      <div style="margin-left: 5px; margin-top: -2px;">Promissory Notes</div>
+                    </div>
+                    <div class="d-flex">
+                      <div style="height: 16px; width: 17px; background: #944EE4; border-radius: 3px;"></div>
+                      <div style="margin-left: 5px; margin-top: -2px;">Lorem Ipsum</div>
+                    </div>
+                  </div>
+              </div>
+              
+        </div>
+        
+
+
+      </div>
+    </div>
+    <div class="col-lg-6 mt-5">
+        <div class="card">
+          <div class="card-body fixed-height-card">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Production(Maturity)</h5>
+                <div class="select-wrapper d-flex">
+                  <div class="col-md-4 mx-3">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      style="width: 150px;"
+                    >
+                      <option selected>Fixed income</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mx-1">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>USD</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mx-0">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Monthly</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- <p>Total:$12,594,000</p> -->
+
+            <canvas id="dochart1" class="box"></canvas>
+     
           </div>
         </div>
-        <div class="col-lg-6 mt-3">
-          <div class="card">
+      </div>
+      <div class="col-lg-6 mt-5">
+        <div class="card">
             <div class="card-body fixed-height-card">
               <div class="row">
                 <div class="d-flex justify-content-between">
-                  <h5 class="card-title">Transaction(Volume)</h5>
+                  <h5 class="card-title">Securities(Portfolio Analysis)</h5>
                   <div class="select-wrapper d-flex">
-                    <div class="col-md-4 mx-3">
-                      <select
-                        class="form-select"
-                        aria-label="Default select example"
-                        style="width: 150px;"
-                      >
-                        <option selected>Fixed income</option>
-                        <option value="1">One</option>
-                      </select>
-                    </div>
-                    <div class="col-md-4 mx-1">
+                    <div class="col-md-4 mx-5">
                       <select
                         class="form-select"
                         aria-label="Default select example"
@@ -115,7 +184,7 @@
                         <option value="1">One</option>
                       </select>
                     </div>
-                    <div class="col-md-4 mx-0">
+                    <div class="col-md-4">
                       <select
                         class="form-select"
                         aria-label="Default select example"
@@ -127,22 +196,90 @@
                   </div>
                 </div>
               </div>
-              <!-- <p>Total:$12,594,000</p> -->
 
-              <canvas id="dochart1" class="box"></canvas>
+              <canvas id="barchart1" class="box1" ></canvas>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-6 mt-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Pie Chart</h5>
-              <canvas id="piechart"></canvas>
+      </div>
+    <div class="col-lg-6 mt-5">
+        <div class="card">
+          <div class="card-body fixed-height-card">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Production(Maturity)</h5>
+                <div class="select-wrapper d-flex">
+                  <div class="col-md-4 mx-3">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      style="width: 150px;"
+                    >
+                      <option selected>Fixed income</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mx-1">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>USD</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mx-0">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Monthly</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- <p>Total:$12,594,000</p> -->
+
+            <canvas id="dochart1" class="box"></canvas>
+     
           </div>
         </div>
       </div>
-    </div>
+      <div class="col-lg-6 mt-5">
+        <div class="card">
+            <div class="card-body fixed-height-card">
+              <div class="row">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">Securities(Portfolio Analysis)</h5>
+                  <div class="select-wrapper d-flex">
+                    <div class="col-md-4 mx-5">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>USD</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Monthly</option>
+                        <option value="1">One</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <canvas id="barchart1" class="box1" ></canvas>
+            </div>
+          </div>
+      </div>
   </div>
+</div>
+</div>
 </div>

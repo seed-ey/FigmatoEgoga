@@ -17,6 +17,7 @@ export class AnalyticsComponent implements OnInit {
     this.renderChart();
     this.renderdoughChart();
     this.renderdoughChart1();
+    this.renderChart1();
   }
 
   renderChart() {
@@ -48,9 +49,9 @@ export class AnalyticsComponent implements OnInit {
             }
           
         },
-        animation: {
-          duration: 0
-        },
+        // animation: {
+        //   duration: 0
+        // },
         plugins: {
           legend: {
             display: false 
@@ -68,14 +69,14 @@ export class AnalyticsComponent implements OnInit {
     new Chart(dochart, {
       type: 'doughnut',
       data: {
-        labels: [
-          '#5E227F',
-          '#FCA542',
-          '#1C6DCA',
-          '#56CCF2',
-          '#2D0C52',
-          '#944EE4',
-        ],       
+        // labels: [
+        //   '#5E227F',
+        //   '#FCA542',
+        //   '#1C6DCA',
+        //   '#56CCF2',
+        //   '#2D0C52',
+        //   '#944EE4',
+        // ],       
          datasets: [{
           label: 'My First Dataset',
           data: [100, 50, 40,20, 10,40],
@@ -92,24 +93,11 @@ export class AnalyticsComponent implements OnInit {
         }]
       },
       options: {
-        radius: '50%',
+        radius: '40%',
         plugins: {
           legend: {
             position: 'bottom', 
             labels: {
-              // generateLabels: function (chart: Chart) {
-              //   const data = chart.data;
-              //   if (data && data.labels && data.labels.length && data.datasets && data.datasets.length) {
-              //     return data.labels.map(function (label, i) {
-              //       const color = label;
-              //       return {
-              //         text: colorLabels[color as string],
-              //         fillStyle: color as string,
-              //       };
-              //     });
-              //   }
-              //   return [];
-              // },
             },
             
           },
@@ -123,17 +111,17 @@ export class AnalyticsComponent implements OnInit {
     new Chart(dochart1, {
       type: 'doughnut',
       data: {
-        labels: [
-          '#5E227F',
-          '#FCA542',
-          '#1C6DCA',
-          '#56CCF2',
-          '#2D0C52',
-          '#944EE4',
-        ],       
+        // labels: [
+        //   '#5E227F',
+        //   '#FCA542',
+        //   '#1C6DCA',
+        //   '#56CCF2',
+        //   '#2D0C52',
+        //   '#944EE4',
+        // ],       
          datasets: [{
           label: 'My First Dataset',
-          data: [100, 50, 40,20, 10,40],
+          data: [100, 50, 40,20, 10,40,30],
           backgroundColor: [
             '#5E227F',
             '#FCA542',
@@ -141,6 +129,7 @@ export class AnalyticsComponent implements OnInit {
             '#56CCF2',
             '#2D0C52',
             '#944EE4',
+            '#89CE94',
           ],
 
           hoverOffset: 4,
@@ -152,24 +141,55 @@ export class AnalyticsComponent implements OnInit {
           legend: {
             position: 'bottom', 
             labels: {
-              // generateLabels: function (chart: Chart) {
-              //   const data = chart.data;
-              //   if (data && data.labels && data.labels.length && data.datasets && data.datasets.length) {
-              //     return data.labels.map(function (label, i) {
-              //       const color = label;
-              //       return {
-              //         text: colorLabels[color as string],
-              //         fillStyle: color as string,
-              //       };
-              //     });
-              //   }
-              //   return [];
-              // },
             },
             
           },
         },
       },
+    });
+  }
+  renderChart1() {
+    const barchart1 = document.getElementById('barchart1') as HTMLCanvasElement;
+    new Chart(barchart1, {
+      type: 'bar',
+      data: {
+        labels: [0, 20, 40, 60, 80, 100, 120, 140],
+        datasets: [{
+          label: 'My First Dataset',
+          indexAxis: 'y',
+          data: [65, 59, 80, 81, 56, 55, 40],
+          // fill: false,
+          borderWidth: 1,
+          backgroundColor: '#FCA542',
+           
+        }]
+      },
+      options: {
+        scales: {
+          x: {
+            grid: {
+              display: false,
+             
+            },
+          },
+          y: {
+              beginAtZero: true,
+              display: true
+            }
+          
+        },
+        // animation: {
+        //   duration: 0
+        // },
+        plugins: {
+          legend: {
+            display: false 
+          },
+          tooltip: {
+            enabled: false
+          }
+        }
+      }
     });
   }
 

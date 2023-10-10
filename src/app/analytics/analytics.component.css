@@ -1,20 +1,9 @@
-/* * {
-    box-sizing: border-box;
-  } */
 .wrapper {
     z-index: 0;
-    /* position: absolute; */
-   
 }
-#barchart{
-    display: block;
-    width: 400px;
-    height: 400px;
-}
+
 select{
     width: 110px;
-   
-    
 }
 .card{
  width: 650px;
@@ -26,20 +15,25 @@ select{
 
 }
 .box{
-    /* height: 16px;
-    width: 16px;
-    border-radius: 5px; */
-    margin-top: -50px;
+    margin-top: -60px;
     margin-left: 70px;
 }
-/* .box-label .chartjs-render-monitor .chartjs-doughnut-legend li {
-    font-size: 14px; 
-    background-color: #f2f2f2; 
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 5px 0;
-  } */
+.box1 {
+    margin-top: 50px;
+    width: 485px;
+    height: 247px;
+    top: 318px;
+    left: 295px;
+
+}
+.color-wrapper{
+    margin-top: -40px;
+}
+.color-box{
+    display: flex;
+    
+}
+
   
 
   
