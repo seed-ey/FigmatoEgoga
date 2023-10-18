@@ -24,10 +24,8 @@ import { AdminComponent } from './admin/admin.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { Chart, registerables } from 'node_modules/chart.js';
-// import { NgxChartsModule } from '@swimlane/ngx-charts';
-
-// Chart.register(...registerables);
-
+import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 
@@ -43,6 +41,8 @@ import { Chart, registerables } from 'node_modules/chart.js';
     AdminComponent,
     PaginationComponent,
     AnalyticsComponent,
+    AuthComponent,
+    LoginComponent,
 
   ],
   imports: [
@@ -58,14 +58,9 @@ import { Chart, registerables } from 'node_modules/chart.js';
     MatButtonModule,
     MatIconModule,
     ReactiveFormsModule,
-    // NgxChartsModule
 
   ],
   providers: [
-    // {
-    //   provide: 'Chart',
-    //   useValue: Chart,
-    // },
     DatePipe],
   bootstrap: [AppComponent]
 })

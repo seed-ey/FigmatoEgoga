@@ -238,70 +238,6 @@ export class AnalyticsComponent implements OnInit {
       }
     });
   }
-  // renderLineChart() {
-  //   const linechart = document.getElementById('lineChart') as HTMLCanvasElement;
-  //   new Chart(linechart, {
-  //     type: 'line',
-  //     data: {
-  //       labels: ['Nigeria', 'East Africa', 'West Africa', 'UK', 'US'],
-  //       datasets: [{
-  //         label: 'Line 1',
-  //         data: [0.05, 0.10, 0.15, 0.20, 1.00],
-  //         borderWidth: 3,
-  //         backgroundColor: '#FCA542', 
-  //         borderColor: '#FCA542', 
-  //         tension: 0.4
-  //       }, {
-  //         label: 'Line 2',
-  //         data: [0.03, 0.08, 0.12, 0.18, 0.90], 
-  //         borderWidth: 3,
-  //         backgroundColor: '#8455B9',
-  //         borderColor: '#8455B9', 
-  //         tension: 0.4
-
-  //       }]
-  //     },
-  //     options: {
-  //       scales: {
-  //         x: {
-  //           grid: {
-  //             display: false,
-  //           },
-  //         },
-  //         y: {
-  //           beginAtZero: false,
-  //           display: false,
-  //           min: 0.05,
-  //           max: 1.00,
-  //           ticks: {
-  //             maxTicksLimit: 5,
-  //             callback: function (value, index, values) {
-  //               const customLabels = ['5%', '10%', '15%', '20%', '100%'];
-  //               return customLabels[index] || ''; 
-  //             }
-  //           }
-            
-  //         }
-  //       },
-  //       plugins: {
-  //         legend: {
-  //           display: false 
-  //         },
-  //         tooltip: {
-  //           enabled: false
-  //         },
-  //         datalabels: {
-  //           anchor: 'end',
-  //           align: 'end',
-  //           formatter: (value) => {
-  //             return (value * 100) + '%';
-  //           },
-  //         }
-  //       },
-       
-  //     }
-  //   });
-  // }
   renderLineChart() {
   const linechart = document.getElementById('lineChart') as HTMLCanvasElement;
   new Chart(linechart, {
@@ -364,7 +300,7 @@ export class AnalyticsComponent implements OnInit {
       }
   });
 
-}
+  }
 renderChart2() {
     const barchart2 = document.getElementById('barchart2') as HTMLCanvasElement;
     new Chart(barchart2, {

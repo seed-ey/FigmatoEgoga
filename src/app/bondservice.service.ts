@@ -34,14 +34,14 @@ deleteUser(id: number) {
   return this.http.delete<any>(`${this.apiUrl}/${id}`)
 }
 listarray = [{ "name": "ravi", "mark": "75" }]
-  GetData() {
+GetData() {
     return this.listarray;
   }
-  SaveData(input: any) {
+SaveData(input: any) {
     this.listarray.push(input);
   }
 
-  GetEmployee(){
+GetEmployee(){
    let token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWludXNlciIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTY2MTgzOTg1NiwiZXhwIjoxNjYxODQxMDU2LCJpYXQiOjE2NjE4Mzk4NTZ9.UH-ANZN90QYmi8mUfnySLbfdCfMuSBnsKycAMqsgUPg'
     let head_obj=new HttpHeaders().set("Authorization","bearer "+token)
     return this.http.get("https://localhost:44308/Employee",{headers:head_obj});
