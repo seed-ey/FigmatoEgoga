@@ -24,9 +24,7 @@ import { AdminComponent } from './admin/admin.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { Chart, registerables } from 'node_modules/chart.js';
-import { AuthComponent } from './auth/auth.component';
-import { LoginComponent } from './auth/login/login.component';
-
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -41,8 +39,7 @@ import { LoginComponent } from './auth/login/login.component';
     AdminComponent,
     PaginationComponent,
     AnalyticsComponent,
-    AuthComponent,
-    LoginComponent,
+  
 
   ],
   imports: [
@@ -58,6 +55,7 @@ import { LoginComponent } from './auth/login/login.component';
     MatButtonModule,
     MatIconModule,
     ReactiveFormsModule,
+    AuthModule
 
   ],
   providers: [

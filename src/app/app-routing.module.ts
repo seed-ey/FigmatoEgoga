@@ -8,11 +8,13 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'body', pathMatch: 'full' },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  // { path: 'dashboard', component: DashboardComponent},
   { path: 'body', component: BodyComponent},
   { path: 'table', component: TableComponent},
   { path: 'analytics', component: AnalyticsComponent},
   { path: 'admin', component: AdminComponent},
+  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
 
   
   
