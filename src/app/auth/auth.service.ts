@@ -22,26 +22,8 @@ export class AuthService {
     console.log(UserData)
   return this.http.post<any>(`${this.apiUrlPost}/register`,UserData);
 }    
-  //  setUserData(userData: any) {
-  //     this.userData = userData;
-  //   }
-  
-  //   setAuthToken(token: string) {
-  //     this.authToken = token;
-  //   }
-  
-  //   getUserData() {
-  //     return this.userData;
-  //   }
-  
-  //   getAuthToken() {
-
-  //    return this.authToken;
-  //   }
-  
 
 login(email: string, password: string) {
-  // debugger
   const param :HttpParams = new HttpParams().set('email',email).set('password',password)
   const requestBody = { email, password };
   return this.http.post(`${this.apiUrlPost}/login`, requestBody);

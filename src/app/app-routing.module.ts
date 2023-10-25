@@ -8,12 +8,15 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  // { path: 'dashboard', component: DashboardComponent},
+  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  { path: 'dashboard', component: DashboardComponent, children: [
+  { path: '', redirectTo: 'body', pathMatch: 'full' },
   { path: 'body', component: BodyComponent},
-  { path: 'table', component: TableComponent},
-  { path: 'analytics', component: AnalyticsComponent},
-  { path: 'admin', component: AdminComponent},
+    { path: 'table', component: TableComponent},
+    { path: 'analytics', component: AnalyticsComponent},
+    { path: 'admin', component: AdminComponent},
+
+  ]},
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
 
   

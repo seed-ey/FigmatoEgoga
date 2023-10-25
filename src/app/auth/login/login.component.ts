@@ -29,7 +29,7 @@ userd: UserData = new UserData();
   login() {
     this.auth.login(this.userd.email, this.userd.password).subscribe(response => {
       console.log("2222222222",this.userd);
-      this.router.navigate(['body']);
+      this.router.navigate(['dashboard']);
 
     });
   }
